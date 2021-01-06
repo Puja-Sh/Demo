@@ -1,0 +1,512 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Domine', sans-serif;
+   
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+a {
+    text-decoration: none;
+    color: #ff7e20;
+}
+
+.main-navbar-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    background-color: #ffffff;
+    /* background-color: aquamarine; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+    /* background: #FFFFFF; */
+    border: 1px solid #E9D6F4;
+}
+
+.brand-name p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6e0788;
+}
+
+.navbar-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-options-ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}   
+
+.navbar-options li {
+    list-style: none;
+    margin: 0 50px;
+    font-size: 1.5rem;
+    padding:10px 0px 10px 0px;
+    color: #ff7e20;
+}
+
+.navbar-options a:focus {
+    padding-bottom: 20px;
+    border-bottom: 4px solid #35b8be;;
+}
+
+.alert-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.alert {
+    margin: 10%;
+    padding: 20px;
+    background-color: #ff7e20;;
+    color: white;
+    width: 40%;
+    height: 250px;
+    
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+  .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 2rem;
+    padding: 30px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 1.5rem;  
+    border: none;
+    outline: none;
+    color: #ff7e20;
+    padding: 10px 0px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0 50px;
+    cursor: pointer;
+  }
+  
+  /* .navbar a:focus, .dropdown:focus .dropbtn {
+    padding-bottom: 20px;
+    border-bottom: 4px solid #AE42C9;
+    
+  } */
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .navbar-active {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ff7e20;
+  }
+
+
+/* =====================================
+        Image Carousel
+===================================== */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 600px;
+    
+  }
+
+.mySlides img {
+    height: 600px;
+    object-fit: cover;
+    width: auto;
+}
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  .carousel-img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  
+}
+/* ===============================
+        Paragraph
+=============================== */
+.welcome-text-para {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 20px 0;
+}
+
+.welcome-text-para p{
+    font-size: 2rem;
+    color: #3e5c50;
+}
+
+/* ============================
+            Cards
+============================ */
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    padding-top: 40px; 
+   
+}
+
+.card-box {
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    /* max-width: 10%;
+    max-height: 400px; */
+    margin: 40px;
+    padding: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+    background-color: #dde7ed;
+}
+
+.card-box img {
+    max-height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.person-img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
+}
+
+.card-img-div {
+    display: flex;
+    justify-content: center;
+    /* height: 300px;
+    width: 100%; */
+    object-fit:scale-down;
+    
+}
+
+.card-box p {
+    color: #333333;
+}
+
+.card-box:hover {
+    /* -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition-duration: 1s; */box-shadow: 2px 2px 3px #ccc;
+}
+
+.card-box .icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0 10px 0;
+}
+.card-box a i {
+    color: #6e0788;
+}
+
+/* ========================================
+              Footer
+======================================= */
+footer {
+  /* left: 0;
+  bottom: 0; */
+  width: 100%;
+  /* margin-top: auto; */
+  
+}
+
+.main-footer-div {
+    width: 100%;
+    height: auto;
+    background-color: #2b2c2e;
+    margin-top: 40px;
+    
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 0;
+}
+
+.footer-part  li {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #e4e8eb;
+}
+
+ul .main-li-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 10px 0 10px 0;
+    
+}
+
+.footer-li a {
+    color: #e4e8eb;
+}
+
+div .footer-icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-info {
+    height: auto;
+    width: 100%;
+    background-color: #1c1d1f;
+    color: #e4e8eb;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* =================================
+        ALL PAGE
+================================= */
+.page-title {
+  font-size: 3rem;
+  display: flex;
+  /* justify-content: flex-start; */
+  width: 50%;
+  margin: 60px auto 0 auto;
+  color: #ff7e20;
+}
+
+
+/* ===========================================
+               RESPONSIVENESS
+=========================================== */
+@media (max-width: 780px) {
+  * {
+    font-size: 10px;  
+    overflow-x: hidden; 
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+
+  .navbar-options li,.dropdown .dropbtn {
+    margin: 10px;
+  }
+
+  .mySlides img, .slideshow-container {
+    height: 400px;
+  }
+  .card-info {
+    display: block;
+  }
+  .card-img-div .person-img {
+    height: auto;
+    width: 200px;
+  }
+
+  .footer-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+    text-align: left;
+    padding: auto;
+}
+.about-us-team {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+  .about-us-para{
+    width: 80%;
+    margin-top: 30px;
+  }
+  .contact-us-img {
+    display: none;
+  }
+  .form-div {
+    width: 100%;
+  }
+  #map {
+    width: 100%;
+  }
+  .alert-box {
+    width: 100%;
+  }
+  .alert {
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+  }
+}

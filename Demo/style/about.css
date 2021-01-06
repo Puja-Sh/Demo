@@ -1,0 +1,59 @@
+.about-us-team {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.about-us-para {
+    width: 30%;
+}
+
+.team-img {
+    height: auto;
+    width: 600px;
+}
+
+.about-us-para h1 {
+    font-size: 3rem;
+    color:#ff7e20 ;
+    margin-bottom:20px;
+}
+.about-us-para p {
+    font-size: 1.1rem;
+    color: #88979f;
+}
+
+/*======= Breadcrumbs ======= */
+.breadcrumbs {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.breadcrumbs_item {
+    display: inline-block;
+}
+
+.breadcrumbs_item:not(:last-of-type)::after {
+    content: '/';
+    margin: 0 5px;
+    color: #ccc;
+}
+
+.breadcrumbs_link {
+    text-decoration: none;
+}
+
+.breadcrumbs_link:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs_link_active {
+    font-weight: bold;
+    color: #28aa76;
+}
+
+.navbar-active {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #28aa76;
+  }
